@@ -8,6 +8,16 @@
 #define PIEZO_Y (2)
 #define PIEZO_T (3)
 
+#define SCANNER_Z_ONLY (0)
+#define SCANNER_Z_LPF (1)
+#define SCANNER_T_ONLY (2)
+#define SCANNER_ZT (3)
+//"Zonly",
+//"Z_LPF",
+//"Tonly",
+//"ZT"});
+
+
 
 // calibrated by afm grid 5um on optical microscope
 //#define MAX_RANGE_Z_NM (21.387973775678940*1000.0)
@@ -31,7 +41,7 @@
 
 //#define MAX_STEP_NUMBER (1000000.0/85.0)
 #define EPS (0.000001)
-#define MAX_STEP_SIZE_PIEZO_MODEL_NM (2.0)//(4.0)
+#define MAX_STEP_SIZE_PIEZO_MODEL_NM (20)// tuning fork(2.0)//(4.0)
 #define MAX_STEP_SIZE_PIEZO_MODEL (MAX_STEP_SIZE_PIEZO_MODEL_NM/MAX_RANGE_Z_NM)//(0.001)//step size=20~27 nm (0.05)
 
 
