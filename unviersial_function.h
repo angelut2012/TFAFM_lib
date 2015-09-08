@@ -15,5 +15,4 @@ int MOD_range(int value, int range_max)
 	return value;
 }
 
-
 #endif
